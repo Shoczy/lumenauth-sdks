@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2021"
 description = "Official Rust SDK for LumenAuth — license auth & HWID locking for desktop apps"
 license = "MIT"
+repository = "https://github.com/Shoczy/lumenauth-sdks"
+readme = "README.md"
+keywords = ["lumenauth", "license", "auth", "hwid", "keyauth"]
+categories = ["authentication", "api-bindings"]
 
 [dependencies]
 ureq = { version = "2", features = ["json"] }

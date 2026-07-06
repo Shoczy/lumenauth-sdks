@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lumenauth"
+version = "0.1.0"
+description = "Official Python SDK for LumenAuth — license auth, HWID locking & gated downloads for desktop apps"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "LumenAuth" }]
+keywords = ["lumenauth", "license", "authentication", "hwid", "keyauth", "licensing"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://lumenauth.dev"
+Repository = "https://github.com/Shoczy/lumenauth-sdks"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["lumenauth.py"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["lumenauth.py", "README.md"]
